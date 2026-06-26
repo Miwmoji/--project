@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าหลัก</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Sarabun',sans-serif}
+        html{scroll-behavior:smooth}
+        body{background:linear-gradient(to bottom,#eaf6ff,#f8fcff);color:#123;}
+
+        .navbar{display:flex;justify-content:space-between;align-items:center;background:linear-gradient(135deg,#2196f3,#0d47a1);padding:12px 32px;position:sticky;top:0;z-index:100;box-shadow:0 4px 15px rgba(0,0,0,.12)}
+        .logo{color:white;font-size:1.6rem;font-weight:700}
+        .nav-links{list-style:none;display:flex;gap:20px}
+        .nav-links a{color:white;text-decoration:none;font-weight:600}
+
+        .hero{background:linear-gradient(rgba(13,71,161,.45),rgba(13,71,161,.12)),url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");background-size:cover;background-position:center;color:white;padding:100px 20px}
+        .hero .wrap{max-width:1100px;margin:0 auto;text-align:left}
+        .breadcrumb{color:rgba(255,255,255,.9);font-size:.95rem;margin-bottom:12px}
+        .hero h1{font-size:2.6rem;margin-bottom:8px;text-shadow:1px 2px 6px rgba(0,0,0,.35)}
+        .hero p{font-size:1rem;margin-bottom:16px;color:rgba(255,255,255,.95)}
+
+        .container{max-width:1100px;margin:30px auto;display:grid;grid-template-columns:2fr 1fr;gap:30px;padding:0 20px}
+
+        .main-card{background:white;border-radius:12px;padding:22px;box-shadow:0 8px 24px rgba(3,81,156,.06)}
+        .meta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+        .meta .pill{background:#e3f2fd;color:#0d47a1;padding:6px 10px;border-radius:999px;font-weight:600;font-size:.95rem}
+
+        .itinerary{display:flex;flex-direction:column;gap:14px}
+        .day{display:flex;gap:14px;align-items:flex-start}
+        .day .thumb{width:140px;height:90px;border-radius:8px;background-size:cover;background-position:center;flex-shrink:0}
+        .day .info h3{font-size:1.05rem;margin-bottom:6px}
+        .day .info p{color:#555;font-size:.96rem}
+
+        .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:16px}
+        .gallery .img{height:120px;border-radius:8px;background-size:cover;background-position:center}
+
+        .sidebar .card{background:white;border-radius:12px;padding:18px;box-shadow:0 8px 20px rgba(3,81,156,.06)}
+        .price{font-size:1.6rem;color:#0d47a1;font-weight:800;margin:8px 0}
+        .book-btn{display:block;text-align:center;margin-top:12px;padding:12px 16px;background:#2196f3;color:white;border-radius:10px;text-decoration:none;font-weight:700}
+
+        .quick-links{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+        .quick-links a{display:block;text-align:center;padding:10px 12px;background:#e3f2fd;color:#0d47a1;border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(3,81,156,.06)}
+        .quick-links a:hover{background:#bbdefb}
+
+        footer{background:#0d47a1;color:white;text-align:center;padding:20px;margin-top:30px}
+
+        @media(max-width:900px){.container{grid-template-columns:1fr}.hero{padding:70px 20px}.hero h1{font-size:1.9rem}.gallery .img{height:90px}}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">เที่ยว สวิสเซอร์แลน</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">หน้าหลัก</a></li>
+            <li><a href="attraction/attractions.html">ท่องเที่ยว</a></li>
+            <li><a href="food/foods.html">อาหาร</a></li>
+            <li><a href="good/goods.html">สินค้า</a></li>
+            <li><a href="contact/contacts.html">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="wrap">
+            <div class="breadcrumb">หน้าแรก / ทัวร์ / SWITZERLAND — Autumn 09-18</div>
+            <h1>ทัวร์สวิตเซอร์แลนด์ ช่วงฤดูใบไม้ร่วง</h1>
+            <p>8 วัน 9 คืน สำรวจทะเลสาบ ธรรมชาติ และเส้นทางวิวที่งดงามของสวิตเซอร์แลนด์</p>
+              <!-- Removed booking button -->
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="main-card">
+            <div class="meta">
+                <div class="pill">ฤดูใบไม้ร่วงง</div>
+                <div class="pill">09 - 18 ต.ค. 2569 (ประมาณ)</div>
+                <div class="pill">รวมที่พัก</div>
+            </div>
+
+            <h2 style="margin-bottom:10px">ไฮไลต์ทัวร์</h2>
+            <p style="color:#444;margin-bottom:14px">เดินทางชมเมืองเล็ก ๆ ที่มีเสน่ห์, นั่งรถไฟสายวิวเทพ และล่องเรือทะเลสาบ</p>
+
+            <h3 style="margin-top:6px;margin-bottom:8px">รายการท่องเที่ยวแนะนำ</h3>
+            <div class="itinerary">
+                <div class="day">
+                    <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470')"></div>
+                    <div class="info">
+                        <h3>วัน 1: ถึงซูริค — ทัวร์เมือง</h3>
+                        <p>เดินเล่นย่านเก่า เยี่ยมชมพิพิธภัณฑ์ และรับประทานอาหารค่ำท้องถิ่น</p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1508610048659-a06b669e3321')"></div>
+                    <div class="info">
+                        <h3>วัน 2-3: ลูเซิร์น และขึ้นเขา</h3>
+                        <p>ชมสะพานไม้ ออกเดินเขาสั้น ๆ และนั่งกระเช้าชมวิว</p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff')"></div>
+                    <div class="info">
+                        <h3>วัน 4-6: อินเตอร์ลาเคิน — ธารน้ำแข็ง</h3>
+                        <p>กิจกรรมอิสระและทัวร์ชมธารน้ำแข็ง</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top:16px;margin-bottom:8px">แกลเลอรีภาพ</h3>
+            <div class="gallery">
+                <div class="img" style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470')"></div>
+                <div class="img" style="background-image:url('https://images.unsplash.com/photo-1508610048659-a06b669e3321')"></div>
+                <div class="img" style="background-image:url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff')"></div>
+                <div class="img" style="background-image:url('https://images.unsplash.com/photo-1444090542259-0af8fa96557e')"></div>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <div class="card main-card">
+                <h4 style="margin-bottom:8px">แนะนำสถานที่</h4>
+                <div style="display:flex;flex-direction:column;gap:12px">
+                    <div style="display:flex;gap:10px;align-items:center">
+                        <div style="width:68px;height:52px;border-radius:8px;background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');background-size:cover;background-position:center;flex-shrink:0"></div>
+                        <div>
+                            <div style="font-weight:700">แมทเทอร์ฮอร์น (Matterhorn)</div>
+                            <div style="color:#666;font-size:.92rem">ยอดเขาไอคอนของสวิตเซอร์แลนด์</div>
+                        </div>
+                    </div>
+
+                    <div style="display:flex;gap:10px;align-items:center">
+                        <div style="width:68px;height:52px;border-radius:8px;background-image:url('https://images.unsplash.com/photo-1508610048659-a06b669e3321');background-size:cover;background-position:center;flex-shrink:0"></div>
+                        <div>
+                            <div style="font-weight:700">ลูเซิร์น (Lucerne)</div>
+                            <div style="color:#666;font-size:.92rem">เมืองเก่าและสะพานไม้ที่มีเสน่ห์</div>
+                        </div>
+                    </div>
+
+                    <div style="display:flex;gap:10px;align-items:center">
+                        <div style="width:68px;height:52px;border-radius:8px;background-image:url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff');background-size:cover;background-position:center;flex-shrink:0"></div>
+                        <div>
+                            <div style="font-weight:700">อินเตอร์ลาเคิน (Interlaken)</div>
+                            <div style="color:#666;font-size:.92rem">ฐานกลางสำหรับเที่ยวภูเขาและทะเลสาบ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card main-card" style="margin-top:12px;padding:12px">
+                <div class="quick-links">
+                    <a href="attraction/attractions.html">ท่องเที่ยว</a>
+                    <a href="food/foods.html">อาหาร</a>
+                    <a href="good/goods.html">สินค้า</a>
+                    <a href="contact/contacts.html">ติดต่อ</a>
+                </div>
+            </div>
+
+            <div style="height:12px"></div>
+            <div class="card main-card">
+                <h4 style="margin-bottom:8px">ข้อมูลเพิ่มเติม</h4>
+                <p style="color:#555;font-size:.95rem">รวมที่พัก 3-4 ดาว, ไกด์ภาษาไทย, ประกันการเดินทางพื้นฐาน</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2026 เที่ยว สวิสเซอร์แลน | กลุ่ม 5 คน</p>
+    </footer>
+
+</body>
+</html>
